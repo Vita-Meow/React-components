@@ -1,0 +1,40 @@
+.skeleton-container {
+    display: inline-block;
+}
+  
+.skeleton-rectangle,
+.skeleton-circle,
+.skeleton-text {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.skeleton-rectangle {
+    display: inline-block;
+}
+
+.skeleton-circle {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.skeleton-text {
+    display: block;
+}
+
+.animated {
+    animation: skeleton-animation 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-animation {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
